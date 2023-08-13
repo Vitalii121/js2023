@@ -33,13 +33,12 @@ console.log(bool_f);
 let firstName = 'Vitalii';
 let middleName = 'Petrovich';
 let lastName = 'Parashchuk';
-let person = firstName+' '+middleName+' '+lastName;
+let person = firstName + ' ' + middleName + ' ' + lastName;
 // let person = `${firstName} ${middleName} ${lastName}`;
 console.log(person);
 
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 //     let a = 100; let b = '100'; let c = true;
-
 let a = 100;
 let b = '100';
 let c = true;
@@ -51,8 +50,8 @@ console.log(typeof c);
 // Додаткове для тих хто цікавився prompt`oм
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
 
-let first_name=prompt('your first name');
-let middle_name=prompt('your middle name');
+let first_name = prompt('your first name');
+let middle_name = prompt('your middle name');
 let age = prompt('your age');
 // let user = first_name + ' '+ middle_name+' '+ 'age' + ' ' +age;
 let user = `${first_name} ${middle_name}, age ${age}`;
