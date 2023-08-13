@@ -56,5 +56,6 @@ let middle_name=prompt('your middle name');
 let age = prompt('your age');
 // let user = first_name + ' '+ middle_name+' '+ 'age' + ' ' +age;
 let user = `${first_name} ${middle_name}, age ${age}`;
+
 console.log(user);
 
