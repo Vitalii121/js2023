@@ -1,0 +1,21 @@
+/*///////////////           additional 2   ///////////////////////////////////////////////////////////*/
+.wraper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*///////////////           add 2   ///////////////////////////////////////////////////////////*/
+
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+.post-card{
+    border:solid 3px burlywood;
+    padding: 20px;
+}
+.post-card:hover{
+    background: darkseagreen;
+}
+
