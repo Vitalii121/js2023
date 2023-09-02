@@ -112,3 +112,5 @@ let exchange = (sumUAH, currencyValues, exchangeCurrency) => {
 
 }
 (exchange(10000, 'USD', [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}]));
+
+
