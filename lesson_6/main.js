@@ -214,4 +214,25 @@ let coursesArray = [
 ];
 // --написати пошук всіх об'єктів, в який в modules є sass
 
+
+let filter=coursesArray.filter((value) =>value.modules.find(value1 => value1==='sass') );
+console.log(filter);
+
 // --написати пошук всіх об'єктів, в який в modules є docker
+
+let filterTwo=coursesArray.filter((value) =>value.modules.find(value1 => value1==='docker') );
+console.log(filterTwo);
+
+// =======================================================
+// let serch=(arr,value)=>{
+//     for (const coursesArrayElement of arr) {
+//         for (const coursesArrayElemen of coursesArrayElement.modules) {
+//             if (coursesArrayElemen===value){
+//               console.log(coursesArrayElement)
+//             }
+//         }
+//     }
+// }
+// serch(coursesArray, 'sass')
+//=====================================================================
+
