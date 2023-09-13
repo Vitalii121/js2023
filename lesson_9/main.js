@@ -76,13 +76,17 @@ for (const coursesAndDurationArrayElement of coursesAndDurationArray) {
 //     Завдання робити через цикли.
 
 for (const courseElement of coursesAndDurationArray) {
+
     let divv = document.createElement('div');
     divv.classList.add('item')
+
     let h1 = document.createElement('h1');
     h1.classList.add('heading');
     h1.innerText = `title - ${courseElement.title}`;
+
     let paragraph = document.createElement('p');
     paragraph.classList.add('description');
+
     paragraph.innerText = `month Duration - ${courseElement.monthDuration}`;
     divv.append(h1, paragraph);
 
@@ -137,14 +141,19 @@ let simpsons = [
 for (const simpson of simpsons) {
     let div3 = document.createElement('div');
     div3.classList.add('member');
+
     let wrap = document.createElement('div');
     wrap.classList.add('wrap');
+
     let image = document.createElement('img')
     image.src = `${simpson.photo}`;
+
     let elemH2 = document.createElement('h2');
     elemH2.innerText = `${simpson.name} ${simpson.surname} age - ${simpson.age}`;
+
     let info = document.createElement('p');
     info.innerText = `${simpson.info}`;
+
     wrap.append(elemH2, info);
 
     div3.append(image, wrap);
