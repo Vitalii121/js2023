@@ -77,16 +77,16 @@ for (const coursesAndDurationArrayElement of coursesAndDurationArray) {
 
 for (const courseElement of coursesAndDurationArray) {
     let divv = document.createElement('div');
-divv.classList.add('item')
-    let h1=document.createElement('h1');
-h1.classList.add('heading');
-h1.innerText=`title - ${courseElement.title}`;
-let paragraph=document.createElement('p');
-paragraph.classList.add('description');
-paragraph.innerText=`month Duration - ${courseElement.monthDuration}`;
-divv.append(h1,paragraph);
+    divv.classList.add('item')
+    let h1 = document.createElement('h1');
+    h1.classList.add('heading');
+    h1.innerText = `title - ${courseElement.title}`;
+    let paragraph = document.createElement('p');
+    paragraph.classList.add('description');
+    paragraph.innerText = `month Duration - ${courseElement.monthDuration}`;
+    divv.append(h1, paragraph);
 
-document.body.appendChild(divv);
+    document.body.appendChild(divv);
 }
 
 //
@@ -135,27 +135,125 @@ let simpsons = [
 //     Якщо людською мовою: під кожного члена родини зробити блок та наповнити його інформацією з цього об'єкту
 
 for (const simpson of simpsons) {
-  let div3 =  document.createElement('div');
-  div3.classList.add('member');
-  let wrap = document.createElement('div');
-  wrap.classList.add('wrap');
-  let image = document.createElement('img')
-    image.src=`${simpson.photo}`;
-  let elemH2 = document.createElement('h2');
-  elemH2.innerText=`${simpson.name} ${simpson.surname} age - ${simpson.age}`;
-  let info = document.createElement('p');
-  info.innerText=`${simpson.info}`;
-  wrap.append(elemH2,info);
+    let div3 = document.createElement('div');
+    div3.classList.add('member');
+    let wrap = document.createElement('div');
+    wrap.classList.add('wrap');
+    let image = document.createElement('img')
+    image.src = `${simpson.photo}`;
+    let elemH2 = document.createElement('h2');
+    elemH2.innerText = `${simpson.name} ${simpson.surname} age - ${simpson.age}`;
+    let info = document.createElement('p');
+    info.innerText = `${simpson.info}`;
+    wrap.append(elemH2, info);
 
-  div3.append(image, wrap);
-  document.body.appendChild(div3);
+    div3.append(image, wrap);
+    document.body.appendChild(div3);
 }
 
 //
 // =========================
 //     Цикл в циклі
 // - Є масив coursesArray котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
-//
-// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules
+// зробити список з елементами
 // Приклад структири знаходиться у файлі example.png який лежить в папці з поточним фйлом
 // ------------------
+for (const coursesArrayElement of coursesArray) {
+    let allElements = document.createElement('div');
+
+    let titleEl = document.createElement('h2');
+    titleEl.innerText = `${coursesArrayElement.title}`;
+
+    let wrapp = document.createElement('div');
+    wrapp.classList.add('wrapp');
+
+    let monthDuration = document.createElement('div');
+    monthDuration.innerText=`Тривалість курсу ${coursesArrayElement.monthDuration} місяців.`;
+    let hour=document.createElement('dic');
+    hour.innerText=`Тривалість навчання ${coursesArrayElement.hourDuration} годин.`;
+    wrapp.append(monthDuration,hour);
+
+    let ul=document.createElement('ul')
+    for (const skill of coursesArrayElement.modules) {
+        let list = document.createElement('li');
+        list.innerText=skill;
+        ul.appendChild(list);
+     }
+
+
+    allElements.append(titleEl,wrapp,ul)
+    document.body.appendChild(allElements);
+
+}
+
+
