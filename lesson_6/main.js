@@ -129,7 +129,7 @@ let cards = deck.reduce((acum, card) => {
         acum.diamonds.push(card);
     } else if (card.cardSuit === 'heart') {
         acum.hearts.push(card);
-    } else if (card.cardSuit === 'club') {
+    } else if (card.cardSuit === 'clubs') {
         acum.clubs.push(card);
     }
     return acum;

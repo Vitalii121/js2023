@@ -1,0 +1,13 @@
+.member{
+    display: flex;
+    margin: 30px;
+}
+.wrap{
+    margin: 30px;
+}
+p{
+    font-size: 24px;
+}
+h2{
+    font-size: 36px;
+}
