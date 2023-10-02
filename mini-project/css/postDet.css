@@ -1,0 +1,79 @@
+/*//         post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.*/
+/*//         Всі елементи котрі характеризують users, posts, comments візуалізувати, так,
+ щоб було видно що це блоки
+(дати фон. марджини і тд)*/
+
+body{
+    background: black;
+}
+
+h1{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+.postWrap{
+    border: #FFFFFF solid 1px;
+    padding: 20px;
+}
+
+.postInfo{
+    color: #FFFFFF;
+    font-size: 20px;
+
+}
+.wrapComments{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.comment{
+    width: 90%;
+    color: #FFFFFF;
+    border: #FFFFFF  solid 1px;
+    padding: 15px;
+    background: #252525;
+}
+
+.comment:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #FFFFFF;
+    color: black;
+}
+
+
+.btnComments{
+    margin: 20px 0;
+    width: 163px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background: darkblue;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: box-shadow 30ms;
+    text-align: center;
+    padding: 7px;
+}
+
+.btnComments:hover{
+    box-shadow: 0 0 10px 0 gray inset, 0 0 10px 4px black;
+    color: white;
+    border-color: white;
+    background: black;
+}
+
+
+
+
+
+

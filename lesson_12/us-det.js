@@ -18,6 +18,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idParam}`).then(value => val
                         insideElementValue.innerText = `${key}: ${value[element] [key]}`;
                     } else {
                         insideElementValue.innerText = `${key}:`
+
                         for (const elementKey in value[element] [key]) {
 
                             let divElement = document.createElement('div');

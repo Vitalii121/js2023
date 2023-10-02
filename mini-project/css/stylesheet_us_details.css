@@ -1,0 +1,114 @@
+/*//         user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє,
+ на 90% ширини сторінки, по центру.*/
+/*//         блоки з короткою іфною про post - в ряд по 5 .*/
+body {
+    background: black;
+
+}
+
+.wrapperBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_postOfCur {
+
+    width: 90%;
+    text-align: center;
+    background: darkblue;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: box-shadow 30ms;
+    padding: 7px;
+    margin: 30px 0;
+}
+
+.btn_postOfCur:hover {
+    box-shadow: 0 0 10px 0 gray inset, 0 0 10px 4px black;
+    color: white;
+    border-color: white;
+    background: black;
+}
+
+.usInfo {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+.ul {
+    color: #FFFFFF;
+    font-size: 20px;
+    border: #FFFFFF solid 1px;
+    padding: 30px;
+}
+
+.wrapPosts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.wrapTitle {
+    align-items: center;
+    text-align: center;
+    border: #FFFFFF solid 1px;
+    padding: 30px;
+}
+
+.wrapTitle:hover {
+    box-shadow: 0 0 10px 0 gray inset, 0 0 10px 4px black;
+}
+
+
+h3 {
+    width: 300px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.postBtn {
+    margin: 20px 0;
+    width: 163px;
+    height: 40px;
+    background: darkblue;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: box-shadow 30ms;
+    text-align: center;
+    padding: 7px;
+}
+
+.postBtn:hover {
+    box-shadow: 0 0 10px 0 gray inset, 0 0 10px 4px black;
+    color: white;
+    border-color: white;
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
